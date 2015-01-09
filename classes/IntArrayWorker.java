@@ -123,4 +123,12 @@ public class IntArrayWorker
 	  }
 	  return max;
   }
+  
+  public int getColTotal(int column) {
+	  int count = 0;
+	  for (int i = 0; i < matrix.length; i++) {
+		  count = count + matrix[i][column];
+	  }
+	  return count;
+  }
 }
