@@ -110,5 +110,17 @@ public class IntArrayWorker
 	  }
 	  return count;
   }
- 
+  
+  public int getLargest() {
+	  int max = 0;
+	  for (int i = 0; i < matrix.length-1; i++) {
+		  for (int j = 0; j < matrix[0].length-1; j++) {
+			  int maxOfTwo = Math.max(matrix[i][j], matrix[i+1][j+1]);
+			  if (maxOfTwo > max) {
+				  max = maxOfTwo;
+			  }
+		  }
+	  }
+	  return max;
+  }
 }
