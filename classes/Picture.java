@@ -313,6 +313,8 @@ public class Picture extends SimplePicture
     this.copy(flower1,200,0);
     Picture flowerNoBlue = new Picture(flower2);
     flowerNoBlue.zeroBlue();
+    Picture snowman = new Picture("snowman.jpg");
+    this.copy(snowman, 160, 95);
     this.copy(flowerNoBlue,300,0);
     this.copy(flower1,400,0);
     this.copy(flower2,500,0);
@@ -369,6 +371,10 @@ public class Picture extends SimplePicture
 	        pixelObj.setBlue((pixelObj.getRed()+pixelObj.getGreen()+pixelObj.getBlue())/3);
 	      }
 	    }
+  }
+  
+  public void myCollage() {
+	  
   }
   /* Main method for testing - each class in Java can have a main 
    * method 

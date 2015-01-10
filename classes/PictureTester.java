@@ -113,7 +113,7 @@ public class PictureTester
 	  beach.copy(swan, 150, 150, 200, 200);
 	  beach.explore();
   }
-  
+ 
   /** Main method for testing.  Every class can have a main
     * method in Java */
   public static void main(String[] args)
@@ -136,8 +136,8 @@ public class PictureTester
 //    testMirrorArms();
 //    testMirrorGull();
 //    testMirrorDiagonal();
-//    testCollage();
-    testCopy();
+    testCollage();
+//    testCopy();
 //    testEdgeDetection();
 //    testEdgeDetection2();
 //    testChromakey();
