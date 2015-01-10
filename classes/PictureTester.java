@@ -53,6 +53,14 @@ public class PictureTester
 	  caterpillar.mirrorHorizontalBotToTop();
 	  caterpillar.explore();
   }
+  
+  public static void testMirrorArms() {
+	  Picture snowman = new Picture("snowman.jpg");
+	  snowman.explore();
+	  snowman.mirrorArms();
+	  snowman.explore();
+  }
+  
   /** Method to test mirrorTemple */
   public static void testMirrorTemple()
   {
@@ -109,8 +117,8 @@ public class PictureTester
 //	  testMirrorVerticalRightToLeft();
 //	  testMirrorHorizontal();
 //	  testMirrorHorizontalBotToTop();
-    testMirrorTemple();
-//    testMirrorArms();
+//    testMirrorTemple();
+    testMirrorArms();
 //    testMirrorGull();
 //    testMirrorDiagonal();
 //    testCollage();
