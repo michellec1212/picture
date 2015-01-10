@@ -105,6 +105,15 @@ public class PictureTester
 	  beach.grayscale();
 	  beach.explore();
   }
+  
+  public static void testCopy() {
+	  Picture beach = new Picture("beach.jpg");
+	  Picture swan = new Picture("swan.jpg");
+	  beach.explore();
+	  beach.copy(swan, 150, 150, 200, 200);
+	  beach.explore();
+  }
+  
   /** Main method for testing.  Every class can have a main
     * method in Java */
   public static void main(String[] args)
@@ -125,10 +134,10 @@ public class PictureTester
 //	  testMirrorHorizontalBotToTop();
 //    testMirrorTemple();
 //    testMirrorArms();
-    testMirrorGull();
+//    testMirrorGull();
 //    testMirrorDiagonal();
 //    testCollage();
-//    testCopy();
+    testCopy();
 //    testEdgeDetection();
 //    testEdgeDetection2();
 //    testChromakey();
